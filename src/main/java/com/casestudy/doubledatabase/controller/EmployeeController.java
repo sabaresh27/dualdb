@@ -33,7 +33,7 @@ public class EmployeeController {
 
         personal.setName(request.getName());
 
-        personal.setEmail(request.getEmail());
+        personal.setPhone(request.getPhone());
 
         personal = personalRepo.save(personal);
 
@@ -41,7 +41,7 @@ public class EmployeeController {
 
         job.setId(personal.getId()); // use same ID
 
-        job.setDesignation(request.getDesignation());
+        job.setDepartment(request.getDepartment());
 
         job.setSalary(request.getSalary());
 
@@ -61,9 +61,9 @@ public class EmployeeController {
 
         return new EmployeeResponse(
 
-                personal.getId(), personal.getName(), personal.getEmail(),
+                personal.getId(), personal.getName(), personal.getPhone(),
 
-                job.getDesignation(), job.getSalary()
+                job.getDepartment(), job.getSalary()
 
         );
 

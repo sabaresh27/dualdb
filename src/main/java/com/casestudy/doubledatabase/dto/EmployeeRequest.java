@@ -2,8 +2,8 @@ package com.casestudy.doubledatabase.dto;
 
 public class EmployeeRequest {
 	   private String name;
-	   private String email;
-	   private String designation;
+	   private String phone;
+	   private String department;
 	   private Double salary;
 	   
 	public String getName() {
@@ -12,17 +12,17 @@ public class EmployeeRequest {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getEmail() {
-		return email;
+	public String getPhone() {
+		return phone;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-	public String getDesignation() {
-		return designation;
+	public String getDepartment() {
+		return department;
 	}
-	public void setDesignation(String designation) {
-		this.designation = designation;
+	public void setDepartment(String department) {
+		this.department = department;
 	}
 	public Double getSalary() {
 		return salary;

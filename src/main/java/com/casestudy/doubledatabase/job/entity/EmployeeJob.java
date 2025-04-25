@@ -11,7 +11,7 @@ public class EmployeeJob {
 	@Id
 	private Long id;
 	
-	private String designation;;
+	private String department;
 	
 	private Double salary;
 	
@@ -24,12 +24,14 @@ public class EmployeeJob {
 		this.id = id;
 	}
 
-	public String getDesignation() {
-		return designation;
+
+
+	public String getDepartment() {
+		return department;
 	}
 
-	public void setDesignation(String designation) {
-		this.designation = designation;
+	public void setDepartment(String department) {
+		this.department = department;
 	}
 
 	public Double getSalary() {
